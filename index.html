@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/style.css">
    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
    <title>Inst Promo</title>
 </head>
 
@@ -16,7 +17,7 @@
       <div class="container">
          <div class="header__content">
             <div class="header__logo">
-               <img src="/img/icon.svg" alt="">
+               <img class="logo" src="/img/icon.svg" alt="">
             </div>
             <nav class="menu">
                <ul class="menu__list">
@@ -30,15 +31,15 @@
                      <a class="menu__item-link" href="#">Clients</a>
                   </li>
                   <li class="menu__item">
-                     <a  class="menu__item-link" href="#">Testimonials</a>
+                     <a class="menu__item-link" href="#">Testimonials</a>
                   </li>
                   <li class="menu__item">
                      <a class="menu__item-link" href="#">Blog</a>
                   </li>
-                  <li class="menu__item">
+                  <!-- <li class="menu__item">
                      <a class="menu__item-link" href="#">Contact Me</a>
-                  </li>
-               </ul> 
+                  </li> -->
+               </ul>
             </nav>
             <div class="header__menu-icon">
                <span></span>
@@ -49,12 +50,14 @@
    <main>
       <section class="one">
          <div class="container">
-            <div class="wrapper">
+            <div class="wrapper__first">
                <div class="user__name">
-                  <h1 class="user__title">Hello,</h1>
-                  <h2 class="name__user">Adam Zakob</h2>
-                  <p class="user__text">a freelance UX Designer</p>
-                  <button class="user__btn"><a class="user__link" href="#">Let’s Talk</a></button>
+                  <div class="user__name-text">
+                     <h1 class="user__title">Hello,</h1>
+                     <h2 class="name__user">Adam Zakob</h2>
+                     <p class="user__text">a freelance UX Designer</p>
+                     <button class="user__btn"><a class="user__link" href="#">Let’s Talk</a></button>
+                  </div>
                </div>
                <div class="user__photo">
                   <img class="photo" src="/img/user-image 1.jpg" alt="">
@@ -66,21 +69,30 @@
          <div class="container">
             <div class="serv">Services</div>
             <h2 class="servise__title">What actually<br>I love to do</h2>
-            <div class="wrapper">
+            <div class="wrapper__two">
                <div class="service">
-                  <h3 class="service__title-one">UX Research</h3>
+                  <div class="img__services">
+                     <img class="img__serv" src="/img/phons.svg" alt="">
+                     <h3 class="service__title-one">UX Research</h3>
+                  </div>
                   <p class="service__text">New demos are continually added and buying a single license for Mak gives you
                      access to all of
                      what's shown below, plus everything that will be added in the future.</p>
                </div>
                <div class="service">
-                  <h3 class="service__title-two">Brand Design</h3>
+                  <div class="img__services">
+                     <img class="img__serv" src="/img/phons2.svg" alt="">
+                     <h3 class="service__title-one">Brand Design</h3>
+                  </div>
                   <p class="service__text">New demos are continually added and buying a single license for Mak gives you
                      access to all of
                      what's shown below, plus everything that will be added in the future.</p>
                </div>
                <div class="service">
-                  <h3 class="service__title-three">Web Development</h3>
+                  <div class="img__services">
+                     <img class="img__serv" src="/img/phons3.svg" alt="">
+                     <h3 class="service__title-one"> Web Development</h3>
+                  </div>
                   <p class="service__text">New demos are continually added and buying a single license for Mak gives you
                      access to all of
                      what's shown below, plus everything that will be added in the future.</p>
@@ -90,24 +102,28 @@
       </section>
       <section class="three">
          <div class="container">
-            <div class="serv">Portfolio</div>
+            <div class="serv__prot">Portfolio</div>
             <div class="div">
                <h2 class="portfolio__title">All Creative<br>
                   Projects</h2>
                <a class="explore" href="">Explore More</a>
             </div>
-            <div class="wrapper">
-               <img class="portfolio__photo" src="/img/main1.jpg" alt="">
-               <img class="portfolio__photo" src="/img/main2.jpg" alt="">
+            <div class="wrapper__three">
+               <div class="portfolio__column">
+                  <img class="portfolio__photo" src="/img/portf_photo.jpg" alt="">
+               </div>
+               <div class="portfolio__column">
+                  <img class="portfolio__photo" src="/img/portf_photo1.jpg" alt="">
+               </div>
             </div>
          </div>
       </section>
       <section class="clients">
          <div class="container">
-            <div class="serv">Clients</div>
+            <div class="serv__client">Clients</div>
             <h2 class="clients">Big Deal<br>
                With</h2>
-            <div class="wrapper">
+            <div class="wrapper__img">
                <div class="info">
                   <img class="info__img" src="/img/infa1.svg" alt="">
                   <p class="text">Slack</p>
@@ -133,20 +149,18 @@
       </section>
       <section class="coments">
          <div class="container">
-            <div class="serv">Testimonials</div>
-            <h2 class="coments">What People<br>
+            <div class="serv__test">Testimonials</div>
+            <h2 class="coments__title">What People<br>
                Says</h2>
             <div class="wrapper__coments">
                <div class="icon__user-one">
                   <div class="imga">
-                     <!-- <img src="/img/Mask.svg" alt=""> -->
                   </div>
                   <div class="imga-one">
-                     <!-- <img src="/img/Mask1.svg" alt=""> -->
                   </div>
                </div>
                <div class="dive">
-                  <img src="/img/coments.jpg" alt="">
+                  <img class="dive__img" src="/img/coments.jpg" alt="">
                   <p class="coments__text">Quote testimonials demonstrate support for your product or feature from a
                      <br>user who has experience with it. This can be significantly more effective than<br> traditional
                      advertising methods as most consumers will trust.</p>
@@ -158,10 +172,10 @@
                </div>
                <div class="icon__user-two">
                   <div class="imga-two">
-                     <!-- <img src="/img/Mask.svg" alt=""> -->
+                   
                   </div>
                   <div class="imga-three">
-                     <!-- <img src="/img/Mask1.svg" alt=""> -->
+                   
                   </div>
                </div>
             </div>
@@ -169,15 +183,17 @@
       </section>
       <section class="blog">
          <div class="container">
-            <div class="wrapper">
-               <div class="serv">Blog</div>
-               <h2 class="blog__title">Get News<br>
-                  Feeds</h2>
+            <div class="wrapper__last">
+               <div class="stiven">
+               <div class="serv__blog">Blog</div>
+               <h2 class="blog__title">Get News Feeds</h2>
+            </div>
                <div class="cart">
                   <img src="/img/blog_cart.jpg" alt="">
                   <p class="data">20 June/2020</p>
                   <p class="blog__text">Technology is evolving rapidly. New<br> devices and applications.</p>
                </div>
+               <div class="photo__cart">
                <div class="photo__cart-one">
                   <img class="cart-text" src="/img/photo-cart.jpg" height="350" alt="">
                   <div class="contente">
@@ -192,49 +208,56 @@
                      <p class="text__card">Every day providing<br> solutions to problems.</p>
                   </div>
                </div>
+               </div>
             </div>
          </div>
       </section>
    </main>
    <footer>
       <section class="last">
-      <div class="container">
-         <div class="wrapper">
-            <form action="" class="form">
-               <div class="serv">Contact Me</div>
-               <div class="form__header">
-                  <h2 class="form__title">Let me know if you want to talk <br>
-                     about a potential collaboration.<br>
-                     I'm available for freelance work.</h2>
-                  <a class="form__link" href="">infoname@mail.com</a>
-               </div>
-               <div class="form__group">
-                  <input type="text" class="form__input" placeholder=" ">
-                  <label for="" class="form__label">What’s your name?</label>
-               </div>
-               <div class="form__group">
-                  <input type="text" class="form__input" placeholder=" ">
-                  <label for="" class="form__label">Your email</label>
-               </div>
-               <div class="form__group">
-                  <input type="text" class="form__input" placeholder=" ">
-                  <label for="" class="form__label">Tell me about your project</label>
-               </div>
-               <div class="form__main">
-                  <button class="form__btn">Get a Qu ote</button>
-                  <div class="form__link-last">
-                     <a class="tec" href="">
-                        <img src="/img/teced.svg" alt="">
-                     </a>
-                     <a class="arrows" href="">
-                        <img src="/img/arrow-right.svg" alt="">
-                     </a>
+         <div class="container">
+            <div class="wrapper">
+               <form action="" class="form">
+                  <div class="serv__contact">Contact Me</div>
+                  <div class="form__header">
+                     <h2 class="form__title">Let me know if you want to talk <br>
+                        about a potential collaboration.<br>
+                        I'm available for freelance work.</h2>
+                     <a class="form__link" href="">infoname@mail.com</a>
                   </div>
-               </div>
-            </form>
+                  <div class="form__group">
+                     <input type="text" class="form__input" placeholder=" ">
+                     <label for="" class="form__label">What’s your name?</label>
+                  </div>
+                  <div class="form__group">
+                     <input type="text" class="form__input" placeholder=" ">
+                     <label for="" class="form__label">Your email</label>
+                  </div>
+                  <div class="form__group">
+                     <input type="text" class="form__input" placeholder=" ">
+                     <label for="" class="form__label">Tell me about your project</label>
+                  </div>
+                  <div class="form__main">
+                     <button class="form__btn">Get a Quote</button>
+                     <div class="form__link-last">
+                        <a class="tec" href="">
+                           <img src="/img/teced.svg" alt="">
+                        </a>
+                        <a class="arrows" href="">
+                           <img src="/img/arrow-right.svg" alt="">
+                        </a>
+                     </div>
+                  </div>
+               </form>
+            </div>    
+               <div class="contact__info">
+               <h2 class="last__title">Let’s be Friends</h2>
+               <img class="ftr__icon" src="/img/footer-icon.svg" alt="">
+               <img class="ftr__icon-two" src="/img/footer-icon1.svg" alt="">
+               <img class="ftr__icon" src="/img/footer-icon2.svg" alt="">
+            </div>
          </div>
-      </div>
-   </section>
+      </section>>
    </footer>
    <script src="/js/Jquery.min.js"></script>
    <script src="js/script.js"></script>
